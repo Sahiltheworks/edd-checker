@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(cors());
 
-const SHIPWAY_AUTH = 'Basic c3VtZXJAc2hvcGxpbGlsby5jb206OUIzdEFoMjAyWUVaaFc0eWVpVDIxWVc3YzhvRkVKVk0K'; // your Shipway key
+const SHIPWAY_AUTH = 'Basic c3VtZXJAc2hvcGxpbGlsby5jb206OUIzdEFoMjAyWUVaaFc0eWVpVDIxWVc3YzhvRkVKVk0='; // your Shipway key
 const PICKUP_PINCODE = '400070'; // your warehouse pincode
 
 app.get('/edd', async (req, res) => {
